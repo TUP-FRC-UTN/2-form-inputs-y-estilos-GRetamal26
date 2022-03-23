@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Clase 2 - 113021</title>
+</head>
+<body>
+    <h1>Reseña:</h1>
+    
+    <form action="/" method="post">
+        Seleccione tipo:<br>
+        <input type="radio" name="tipo" id="tipo" value="1">Pelicula<br>
+        <input type="radio" name="tipo" id="tipo" value="2">Serie<br>
+        <input type="radio" name="tipo" id="tipo" value="3">Videojuego<br>
+        <br>
+        Titulo:<br>
+        <input type="text" name="titulo" id="titulo" placeholder="Ingrese Titulo"><br>
+        <br>
+        Selecciones categoria principal:<br>
+        <select name="categoria" id="categoria">
+            <option value="">Seleccione...</option>
+            <option value="1">Accion</option>
+            <option value="2">Fantasia</option>
+            <option value="2">Comedia</option>
+            <option value="2">Suspenso</option>
+            <option value="2">Terror</option>
+        </select>
+        <br>
+        <br>
+        Seleccione otras categorias:<br>
+        <input type="checkbox" name="categorias" id="categorias">Accion<br>
+        <input type="checkbox" name="categorias" id="categorias">Fantasia<br>
+        <input type="checkbox" name="categorias" id="categorias">Comedia<br>
+        <input type="checkbox" name="categorias" id="categorias">Suspenso<br>
+        <input type="checkbox" name="categorias" id="categorias">Terror<br>
+        <input type="checkbox" name="categorias" id="categorias">Otros<br>
+        <br>
+        Ingrese fecha de lanzamiento:<br>
+        <input type="date" name="fecha-salida" id="fecha-salida">
+        <br>
+        <br>
+        Ingrese su nota: <br>
+        <input type="number" name="nota" id="nota" min="1" max="10"><br>
+        <br>
+        Ingrese su reseña: <br>
+        <textarea name="reseña" id="reseña" cols="40" rows="20" placeholder="Ingrese aqui la reseña..."></textarea>
+        <br>        
+        <button type="submit">Mandar reseña</button>
+        <button type="reset">Cancelar</button>
+    </form>
+</body>
